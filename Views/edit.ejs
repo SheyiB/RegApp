@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <%- include('partials/header') %>
+    <%- include('partials/btn')  %>
+
+    <div class=" login login-dashboard edit">
+        <span> <h3 class="dashboard-label">Here you can edit your details</h3></span><br>
+        <hr>
+        <div>
+            <form action="update" method="put">
+
+                    <label for="firstName"> First Name </label>
+                    <input class="form-control input put"type="text" name="firstname">
+                   
+                    <label for="lastName"> Last Name </label>
+                    <input class="form-control input put"type="text" name="lastname">
+                    
+                    <label for="middleName"> Middle Name </label>
+                    <input class="form-control input put"type="text" name="middlename">
+        
+                    <label for="dob"> Date of Birth </label>
+                    <input class="form-control input put" type="date" name="dob">
+        
+                    <label for="phone"> Phone Number </label>
+                    <input class="form-control input put" type="tel" name="phone">
+                
+                    <label for="mail"> E-Mail </label>
+                    <input class="form-control input put" type="tel" name="mail">
+              
+                    <label for="nationality"> Nationality</label>
+                    <%- include('partials/Countries') %>
+    
+                    <label for="username"> Username </label>
+                    <input class="form-control input put" type="text" name="username">
+            
+                    <label for="password"> Enter Password </label>
+                    <input class="form-control input put" type="password" name="password">
+                    
+                    <label for="repassword"> Renter Password </label>
+                    <input class="form-control input put" type="password" name="repassword">
+
+                    <button class="form-control input put update" type="submit"> Update</button>
+                    
+            </form>
+      
+       
+        </div>
+    </div>
+
+</body>
+</html>

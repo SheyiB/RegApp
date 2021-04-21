@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+   
+    <%- include('partials/head') %> 
+</head>
+<body>
+    <%- include('partials/header') %> 
+    <div class="login">
+        <div class="loginl">
+
+            <!-- <img class="login-img" src="/images/puli.jpg" alt=""> -->
+
+        </div>
+    
+        <div class="loginr">
+    
+            <form action="/signin" method="POST">
+                <div>
+                <h1 class="login-label"> Sign In </h1> <hr>  
+                </div>
+                
+                <div>
+                <label class="login-label" for="username"> Username</label>
+                <input type="text" name="username" placeholder="Username" class="form-control input login-input" >
+                </div>
+    
+                <div>
+                <label class="login-label" for="password"> Password </label>
+                <input type="password" name="password" placeholder="Password" class="form-control input login-input">
+                </div>
+    
+                <div>
+                <button type="submit"> Login </button>
+                </div>
+            </form>
+    
+        </div>
+        <%- include('partials/btn')  %>
+    </div>
+
+
+    
+</body>
+</html>  

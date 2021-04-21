@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+    <%- include('partials/head') %> 
+</head>
+<body>
+    <%- include('partials/header') %> 
+
+    <div id="form">
+        <form class="form-group" action="/submit" method="POST">
+
+            <div>
+            <label for="firstName"> First Name </label>
+            <input class="form-control input put"type="text" name="firstname">
+            </div>
+
+            <div>
+            <label for="lastName"> Last Name </label>
+            <input class="form-control input put"type="text" name="lastname">
+            </div>
+
+            <div>
+            <label for="middleName"> Middle Name </label>
+            <input class="form-control input put"type="text" name="middlename">
+            </div>
+
+            <div>
+            <label for="dob"> Date of Birth </label>
+            <input class="form-control input put" type="date" name="dob">
+            </div>
+
+            <div>
+            <label for="gender"> Gender </label><br>
+            <div class="gender">
+            <!-- <input class=" " type="radio" name="gender"> Male
+            <input class=" " type="radio" name="gender"> Female -->
+            </div>
+            </div>
+
+            <div>
+            <label for="phone"> Phone Number </label>
+            <input class="form-control input put" type="tel" name="phone">
+            </div>
+        
+            <div>
+            <label for="mail"> E-Mail </label>
+            <input class="form-control input put" type="tel" name="mail">
+            </div>
+
+            <div>
+            <label for="continent"> Continent </label><br>
+            <select name="contintent" class="form-control input"id="">
+                <option value=" ">Select a Continent</option>
+                <option value="--"> Not Specified</option>
+                <option value=African> Africa </option>
+                <option value="European"> Europe</option>
+                <option value="Australian"> Australia</option>
+                <option value="North American"> North America</option>
+                <option value="Asian"> Asia</option>
+                <option value="South American"> South America</option>
+                <option value="East American"> East America</option>
+            </select>
+            </div>
+
+            <div>
+              <label for="nationality"> Nationality</label>
+              <%- include('partials/Countries') %>
+            </div>
+
+            <div>
+                <label for="State"> State </label><br>
+                <!-- <div id="ngstates">
+                    <%- include('partials/states' ) %>
+                </div> -->
+                <div>
+                    <input class="form-control input put" id="typein" type="text" placeholder="Type your state">
+                </div>
+                
+            </div>
+
+            <div>
+                <label for="username"> Username </label>
+                <input class="form-control input put" type="text" name="username">
+            </div>
+    
+            <div>
+                <label for="password"> Enter Password </label>
+                <input class="form-control input put" type="password" name="password">
+            </div>
+    
+            <div>
+                <label for="repassword"> Renter Password </label>
+                <input class="form-control input put" type="password" name="repassword">
+            </div>
+
+            <div>
+                <button class="form-control input put" type="submit"> Submit</button>
+            </div>
+
+            <div>
+                <span class="p-2 text-center bg-success"> <%= message %> </span>
+            </div>
+
+        </form>
+        <%- include('partials/btn')  %>
+    </div>
+</body>
+</html>

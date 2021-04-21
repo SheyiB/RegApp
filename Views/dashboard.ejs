@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <%- include('partials/head') %>
+</head>
+<body>
+    <header>
+        <span> The Random Registration Page  | Dashboard </span>
+      
+        <nav>
+            <a href="/"> Home </a> | 
+            <a href="News"> News </a> | 
+            <a href="Database"> Database  </a> | 
+            <a href="Register"> Register  </a> | 
+            <a href="Login"> Login  </a>
+        </nav>
+    </header>
+    
+
+    <div class=" login login-dashboard">
+        <span > <h3 class="dashboard-label">Welcome <%= status %></h3></span><br>
+        <span>DETAILS</span><hr>
+        <span> Name : <%= lastname %> <%= firstname %> <%= middlename %></span><br>
+        <span> Date of Birth : <%= dob %></span><br>
+        <span> Phone Number : 0<%= phonenumber %> </span><br>
+        <span> eMail : <%= mail %> </span><br>
+        <!-- <span> Continent : %= continent %></span><br> -->
+        <span> Nationality : <%= nationality %> </span><br>
+        <span> 
+                <button> <a href="edit"> Edit Info </a>  </button> 
+        </span>
+       
+    </div>
+    
+    <footer>
+        <%- include('partials/btn')  %>
+        <marquee behavior="" direction=""> <h1> Hello  <%= status %>  Welcome to your page</h1> </marquee></footer>
+</body>
+</html>
